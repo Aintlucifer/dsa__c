@@ -6,17 +6,17 @@ int bul(int a[])
     int b[4];int i,j,cows=0,bulls=0,c=0;
     for(i=0;i<4;i++)
     {
-        printf("\nGuess the %dno. digit\t",i+1);
-        scanf("%d",&b[i]);
-        if (b[i] < 0 || b[i] > 9) 
+        printf("Guess the %d digit no. \t",i+1);
+        scanf(" %d",&b[i]);
+        if (b[i] < 0 || b[i] > 9)
         {
             printf("Invalid input. Please enter a digit between 0 and 9.\n");
             i--;
         }
     }
-    for (i = 0; i < 4; i++) 
+    for (i=0;i<4;i++) 
     {
-        if (a[i] == b[i]) 
+        if (a[i]==b[i]) 
         {
             bulls++;
             continue;
@@ -30,7 +30,8 @@ int bul(int a[])
             }
         }
     }
-    printf("%d BULLS & %d COWS",bulls,cows);
+    printf("COWS-----BULLS\n");
+    printf(" %d         %d\n",cows,bulls);
     return bulls;
 }
 int main()
@@ -51,14 +52,14 @@ int main()
         c++;
         if(k==4)
         {
-            printf("\nYeah,you are a champ");
+            printf("\nYeah,you are a champ :)\n");
             break;
         }
         else if(c==10)
         {
-            printf("\nSorry,you lose!");
+            printf("The no. is %d",ran);
+            printf("\nSorry,you lose! :(\n");
             break;
-        }
-        
+        }    
     }
 }
