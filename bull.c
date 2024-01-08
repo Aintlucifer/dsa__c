@@ -14,7 +14,7 @@ int bul(int a[])
             i--;
         }
     }
-    for (i=0;i<4;i++) 
+    for (i=0;i<4;i++)
     {
         if (a[i]==b[i]) 
         {
@@ -60,6 +60,6 @@ int main()
             printf("The no. is %d",ran);
             printf("\nSorry,you lose! :(\n");
             break;
-        }    
+        }
     }
 }
